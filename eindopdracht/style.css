@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #525252;
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 5px;
+}
