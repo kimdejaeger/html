@@ -1,10 +1,20 @@
-body {
+#bodyIndex {
   margin: 0;
   background-color: rgb(252, 201, 217);
 }
 
+#bodyProject {
+  margin: 0;
+  background-color: #58c7e0;
+}
+
+#bodyGallery {
+  margin: 0;
+  background-color: lightgreen;
+}
+
 header {
-  background-color: #525252;
+  background-color: #666666;
   margin: 0;
   padding: 15px;
   text-align: left;
@@ -21,20 +31,107 @@ header a {
   margin-top: 0px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
+  text-decoration: underline;
 }
 
 #h2Identiteit {
   text-align: left;
-  font-family: poppins, sans-serif;
-  font-size: 20px;
+  font-size: 27px;
   margin: 10px;
 }
 
 #pIdentiteit {
   text-align: left;
-  font-family: merriweather, serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   margin: 10px;
   padding: 0;
-  max-width: 400px;
+  max-width: 450px;
+  line-height: 1.2;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: -10px;
+  padding: 5px;
+}
+
+#hobbys {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: left;
+  max-width: 600px;
+}
+
+#hobby {
+  max-width: 450px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  margin: 5px;
+  line-height: 1.2;
+}
+
+#h1ProjectTitel {
+  text-align: center;
+  margin: 0px;
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+}
+
+.opdrachten {
+  display: flex;
+}
+
+.opdrachten img {
+  background: linear-gradient(to right, #d2faff 10%, #f6fafc 20%);
+  margin-bottom: 20px;
+  padding: 8px;
+  box-shadow: 0 8px 15px rgba(130, 23, 217, 0.3);
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.opdrachten img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+#eersteOpdracht {
+  margin: 5px;
+  width: auto;
+  height: 200px;
+}
+#dierenwebsite {
+  margin: 5px;
+  width: auto;
+  height: 200px;
+}
+#h1GalleryTitel {
+  text-align: left;
+  margin: 10px;
+}
+
+#galleryOpdracht {
+  margin: 5px;
+  width: auto;
+  height: 200px;
+}
+
+.gallery {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px;
+  gap: 0;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+  border: 1px solid #ffffff;
 }
