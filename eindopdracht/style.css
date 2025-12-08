@@ -95,29 +95,15 @@ header a {
   border-radius: 10px;
 }
 
+.opdrachten img {
+  margin: 5px;
+  width: auto;
+  height: 190px;
+}
+
 .opdrachten img:hover {
   transform: scale(1.05);
   opacity: 0.8;
-}
-#eersteOpdracht {
-  margin: 5px;
-  width: auto;
-  height: 200px;
-}
-#dierenwebsite {
-  margin: 5px;
-  width: auto;
-  height: 200px;
-}
-#h1GalleryTitel {
-  text-align: left;
-  margin: 10px;
-}
-
-#galleryOpdracht {
-  margin: 5px;
-  width: auto;
-  height: 200px;
 }
 
 .gallery {
