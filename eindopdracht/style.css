@@ -121,3 +121,8 @@ header a {
   object-fit: cover;
   border: 1px solid #ffffff;
 }
+
+.footer {
+  background-color: black;
+  color: white;
+}
