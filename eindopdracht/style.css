@@ -5,12 +5,12 @@
 
 #bodyProject {
   margin: 0;
-  background-color: #58c7e0;
+  background-color: #879dcc;
 }
 
 #bodyGallery {
   margin: 0;
-  background-color: lightgreen;
+  background-color: #fffdca;
 }
 
 #bodyContact {
@@ -38,6 +38,12 @@ header a {
   padding: 5px;
 }
 
+.container p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
 #h1title {
   text-align: center;
   margin-top: 0;
@@ -53,10 +59,8 @@ header a {
 
 #introductie {
   text-align: left;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
   margin: 10px;
-  max-width: 400px;
+  max-width: 450px;
 }
 
 #h2Identiteit {
@@ -67,28 +71,13 @@ header a {
 
 #pIdentiteit {
   text-align: left;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 18px;
   margin: 10px;
   padding: 0;
-  max-width: 300px;
-  line-height: 1.2;
+  max-width: 450px;
 }
-
-/* #flag {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: left;
-  max-width: 400px;
-} */
 
 #hobby {
   max-width: 450px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 18px;
-  margin: 5px;
-  line-height: 1.2;
 }
 
 #schoolProject {
@@ -100,10 +89,7 @@ header a {
 }
 
 #boxOpdrachten {
-  /* border: 1px solid #000000; */
-  background-color: #0374b5;
-  margin: 0 7px;
-  box-shadow: 5px 5px 5px #000000;
+  background-color: #c0137b90;
 }
 
 .opdrachten {
@@ -113,8 +99,8 @@ header a {
 .opdrachten img {
   background-color: #ffffff;
   margin: 5px;
-  box-shadow: 0 15px 20px rgba(11, 23, 43, 0.3);
-  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(11, 23, 43, 0.3);
+  border-radius: 7px;
   padding: 6px;
   width: auto;
   height: 170px;
@@ -128,10 +114,12 @@ header a {
 #voorbeelden {
   display: flex;
   align-items: center;
-  margin: 5px;
+  margin: 0;
   gap: 10px;
-  background-color: #58c7e0;
-  padding: 20px;
+  padding: 10px;
+  background-color: #dd99c2;
+  box-shadow: 5px 5px 5px #7d1f7f;
+  border-radius: 12px;
 }
 
 #teamProject {
@@ -147,33 +135,41 @@ header a {
 #imgTeamproject {
   display: flex;
   justify-content: center;
-  width: 100%;
   height: 200px;
+  margin: 0;
+  padding: 10px;
+  gap: 10px;
 }
 
-#uitlegGallery {
+.galleryLayout {
   display: grid;
-  grid-template-columns: auto 2fr; /* Links tekst, rechts afbeeldingen */
-  gap: 200px;
-  background: linear-gradient(
-    to bottom,
-    #008d21 0%,
-    #02c42f 60%,
-    lightgreen 100%
-  );
+  grid-template-columns: 1fr 2fr; /* links smal, rechts breder */
+  gap: 40px;
+  padding: 20px;
+  align-items: start;
+}
+
+.galleryText {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-self: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 5px;
+  gap: 5px;
+}
+.gallery img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
 }
 
-.gallery img {
-  width: 200px;
-  height: 200px;
-  display: block;
-  object-fit: cover;
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 kolom op mobiel */
+  }
 }
 
 .contactFormulier {
