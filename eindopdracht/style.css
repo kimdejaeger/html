@@ -15,7 +15,7 @@
 
 #bodyContact {
   margin: 0;
-  background-color: #cb9cf7;
+  background-color: #ffffff;
 }
 
 header {
@@ -144,7 +144,7 @@ header a {
 .galleryLayout {
   display: grid;
   grid-template-columns: 1fr 2fr; /* links smal, rechts breder */
-  gap: 40px;
+  gap: 10px;
   padding: 20px;
   align-items: start;
 }
@@ -174,25 +174,35 @@ header a {
 
 .contactFormulier {
   text-align: center;
-  background-color: #7d1f7f;
-  color: white;
-  border: 3px solid #000000;
-  margin: 20px;
-}
-
-#ContactOpnemen {
-  max-width: 350px;
-  margin: 10px;
-}
-
-#naam {
-  border-radius: 5px;
-  margin: 10px;
-}
-
-#formulier {
+  background-color: #cecece;
+  color: #000000;
   border: 2px solid #000000;
-  margin-left: 500px;
+  margin: 20px;
+  display: flex;
+}
+
+form {
+  width: 350px;
+  height: 400px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  width: 100px;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+.form-row textarea {
+  flex: 1;
+  margin-left: 10px;
 }
 
 .footer {

@@ -14,22 +14,63 @@
       <a href="contact.html">Contact</a>
     </header>
     <main>
-      <div>
-        <h1>Neem contact op</h1>
-      </div>
       <div class="contactFormulier">
-        <h2>Contact informatie</h2>
+        <form>
+          <p>Neem contact op</p>
+          <div class="form-row">
+            <label for="vnaam">Voornaam: </label
+            ><input id="vnaam" type="text" />
+          </div>
+          <div class="form-row">
+            <label for="anaam">Achternaam: </label
+            ><input id="anaam" type="text" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email: </label
+            ><input type="email" id="email" required />
+          </div>
+          <div class="form-row">
+            <label for="geslacht">Geslacht:</label>
+            <label for="man-geslacht"
+              ><input
+                type="radio"
+                id="man-geslacht"
+                name="geslacht"
+                value="Man"
+              />man</label
+            >
+            <label for="vrouw-geslacht"
+              ><input
+                id="vrouw-geslacht"
+                type="radio"
+                name="geslacht"
+                value="Vrouw"
+              />Vrouw</label
+            >
+            <label for="anders-geslacht"
+              ><input
+                id="anders-geslacht"
+                type="radio"
+                name="geslacht"
+                value="Anders"
+              />Anders</label
+            >
+          </div>
+          <div class="form-row">
+            <textarea
+              name="vragenOpmerkingen"
+              id="vragenOpmerkingen"
+              rows="10"
+              cols="30"
+              placeholder="vul hier u vragen of opmerkingen"
+            ></textarea>
+          </div>
+        </form>
         <div>
-          <div>
-            <p>
-              Heeft u vragen of opmerkingen dan vul deze formulier om contact op
-              te nemen met mij. U kunt ook een e-mail sturen.
-            </p>
-            <p>e-mail: kf.dejaeger@gmail.com</p>
-          </div>
-          <div id="formulier">
-            <label for="naam">Naam: <input id="naam" type="text" /></label>
-          </div>
+          <p>
+            Heeft u vragen of opmerkingen dan vul deze formulier om contact op
+            te nemen met mij.
+          </p>
         </div>
       </div>
     </main>
