@@ -1,6 +1,6 @@
 #bodyIndex {
   margin: 0;
-  background-color: rgb(252, 201, 217);
+  background-color: rgb(251, 215, 227);
 }
 
 #bodyProject {
@@ -31,19 +31,6 @@ header a {
   margin: 0 5px;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 5px;
-}
-
-.container p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
 #h1title {
   text-align: center;
   margin-top: 0;
@@ -52,32 +39,58 @@ header a {
   text-decoration: underline;
 }
 
-#h2Introductie {
-  text-align: left;
-  margin: 10px;
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 5px;
 }
 
-#introductie {
+.container p {
   text-align: left;
-  margin: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
   max-width: 450px;
 }
 
-#h2Identiteit {
+.kopjes {
   text-align: left;
   font-size: 27px;
   margin: 10px;
 }
 
-#pIdentiteit {
-  text-align: left;
-  margin: 10px;
-  padding: 0;
-  max-width: 450px;
+@media (max-width: 1000px) {
+  .container p {
+    max-width: 350px;
+    font-size: 18px;
+  }
+
+  .kopjes {
+    font-size: 22px;
+  }
 }
 
-#hobby {
-  max-width: 450px;
+@media (max-width: 850px) {
+  .container p {
+    max-width: 300px;
+    font-size: 16px;
+  }
+
+  .kopjes {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container p {
+    max-width: 250px;
+    font-size: 14px;
+  }
+
+  .kopjes {
+    font-size: 18px;
+  }
 }
 
 #schoolProject {
@@ -89,7 +102,7 @@ header a {
 }
 
 #boxOpdrachten {
-  background-color: #c0137b90;
+  background-color: #f328a290;
 }
 
 .opdrachten {
@@ -143,7 +156,7 @@ header a {
 
 .galleryLayout {
   display: grid;
-  grid-template-columns: 1fr 2fr; /* links smal, rechts breder */
+  grid-template-columns: 1fr 2fr;
   gap: 10px;
   padding: 20px;
   align-items: start;
@@ -160,10 +173,16 @@ header a {
   margin: 5px;
   gap: 5px;
 }
+
 .gallery img {
   width: 100%;
   aspect-ratio: 4/3;
   object-fit: cover;
+}
+
+.gallery img:hover {
+  transform: scale (1.05);
+  opacity: 0.9;
 }
 
 @media (max-width: 600px) {
@@ -173,36 +192,44 @@ header a {
 }
 
 .contactFormulier {
-  text-align: center;
+  margin: 10px;
   background-color: #cecece;
   color: #000000;
   border: 2px solid #000000;
-  margin: 20px;
-  display: flex;
+  margin: 10px 80px;
 }
 
 form {
-  width: 350px;
-  height: 400px;
+  justify-content: center;
+  width: 400px;
+  height: 500px;
+  padding: 10px;
 }
 
 .form-row {
   display: flex;
-  align-items: center;
   margin-bottom: 20px;
 }
 
 .form-row label {
-  width: 100px;
+  width: 90px;
 }
 
 .form-row input {
+  padding: 5px;
   flex: 1;
 }
 
 .form-row textarea {
   flex: 1;
-  margin-left: 10px;
+  margin-left: 20px;
+  resize: none;
+}
+
+.form-row button {
+  flex: 1;
+  padding: 8px;
+  margin-left: 20px;
 }
 
 .footer {

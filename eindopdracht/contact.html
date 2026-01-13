@@ -19,11 +19,11 @@
           <p>Neem contact op</p>
           <div class="form-row">
             <label for="vnaam">Voornaam: </label
-            ><input id="vnaam" type="text" />
+            ><input id="vnaam" type="text" required />
           </div>
           <div class="form-row">
             <label for="anaam">Achternaam: </label
-            ><input id="anaam" type="text" />
+            ><input id="anaam" type="text" required />
           </div>
           <div class="form-row">
             <label for="email">Email: </label
@@ -37,6 +37,7 @@
                 id="man-geslacht"
                 name="geslacht"
                 value="Man"
+                checked
               />man</label
             >
             <label for="vrouw-geslacht"
@@ -63,15 +64,13 @@
               rows="10"
               cols="30"
               placeholder="vul hier u vragen of opmerkingen"
+              required
             ></textarea>
           </div>
+          <div class="form-row">
+            <button type="submit">Verzend</button>
+          </div>
         </form>
-        <div>
-          <p>
-            Heeft u vragen of opmerkingen dan vul deze formulier om contact op
-            te nemen met mij.
-          </p>
-        </div>
       </div>
     </main>
     <footer class="footer">
